@@ -22,8 +22,6 @@ pjsua \
   --log-level=0 \
   --app-log-level=0 \
   --no-stderr \
-  --color \
-  --light-bg \
   --null-audio \
   --snd-auto-close=0 \
   --max-calls=15 \

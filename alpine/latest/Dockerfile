@@ -9,11 +9,11 @@ WORKDIR ${WORKDIR}
 
 RUN apk add --update --no-cache \
       pjsua \
- && echo "export PATH=\"${WORKDIR}:${PATH}\"" > /etc/profile.d/pjsua-path.sh \
- && chmod +x /etc/profile.d/pjsua-path.sh \
- && rm -rf /var/cache/apk/* \
-           /tmp/* \
-           /var/tmp/*
+      && echo "export PATH=\"${WORKDIR}:${PATH}\"" > /etc/profile.d/pjsua-path.sh \
+      && chmod +x /etc/profile.d/pjsua-path.sh \
+      && rm -rf /var/cache/apk/* \
+      /tmp/* \
+      /var/tmp/*
 
 COPY . .
 
